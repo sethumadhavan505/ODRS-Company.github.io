@@ -14,13 +14,15 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:15px 40px;
+    padding:5px 20px;
+    height:60px;
     background:white;
     box-shadow:0 2px 8px rgba(0,0,0,0.1);
 }
 
 .company-logo img{
-    height:60px;
+    height:50px;
+    width:auto;
 }
 
 .profile-menu{
@@ -150,7 +152,7 @@ body{
 
 .left-panel h2,
 .right-panel h2 {
-    font-size: 32px;
+    font-size: 30px;
     border-bottom: 3px solid #38bdf8;
     display: inline-block;
     padding-bottom: 5px;
