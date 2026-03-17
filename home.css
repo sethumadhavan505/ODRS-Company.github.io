@@ -45,7 +45,7 @@ body{
 /* MAIN */
 .container{
     display:flex;
-    height:calc(100vh - 80px);
+    min-height: 100vh;
 }
 
 .left-panel{
@@ -53,6 +53,7 @@ body{
     background:#1e293b;
     color:white;
     padding:40px;
+    min-height: 100vh;
 }
 
 .right-panel{
