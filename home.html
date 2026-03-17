@@ -134,8 +134,16 @@ items.forEach(item => {
   const btn = item.querySelector(".accordion-btn");
 
   btn.addEventListener("click", () => {
-    items.forEach(i => i.classList.remove("active"));
-    item.classList.add("active");
+
+    // If already open → close it
+    if (item.classList.contains("active")) {
+      item.classList.remove("active");
+    } else {
+      items.forEach(i => i.classList.remove("active"));
+      
+      item.classList.add("active");
+    }
+
   });
 });
 </script>    
