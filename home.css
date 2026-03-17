@@ -113,14 +113,31 @@ body{
 .accordion-item.active .icon {
   transform: rotate(180deg);
 }
-.left-panel ul li a {
-    font-size: 50px;
+
+/* CONTACT US FIXED STYLE */
+
+.left-panel ul {
+    list-style: none;
+    padding: 0;
 }
+
 .left-panel ul li {
-    margin: 15px 0;
+    margin: 20px 0;   /* good spacing */
+}
+
+.left-panel ul li a {
+    font-size: 20px;  /* perfect size */
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 .left-panel ul li a i {
-    margin-right: 10px;
+    margin-right: 12px;
     font-size: 22px;
+}
+
+.left-panel ul li a:hover {
+    color: #38bdf8;
 }
