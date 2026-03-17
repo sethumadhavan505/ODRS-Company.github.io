@@ -156,3 +156,8 @@ body{
     font-size: 30px;
 }
 
+.profile-menu{
+    position:relative;
+    cursor:pointer;
+    margin-right: 20px;
+}
