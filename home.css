@@ -150,7 +150,8 @@ body{
 
 .left-panel h2,
 .right-panel h2 {
-    font-size: 30px;   /* increase size */
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-size: 32px;
+    border-bottom: 3px solid #38bdf8;
+    display: inline-block;
+    padding-bottom: 5px;
 }
