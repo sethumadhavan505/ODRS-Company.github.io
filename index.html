@@ -19,19 +19,19 @@
             <h2 class="slide-element">Login</h2>
             <form action="#">
                 <div class="field-wrapper slide-element">
-                    <input type="text" required>
+                    <input type="text" id="loginUsername" required>
                     <label>Username</label>
                     <i class="fa-solid fa-user"></i>
                 </div>
 
                 <div class="field-wrapper slide-element">
-                    <input type="password" required>
+                    <input type="password" id="loginPassword" required>
                     <label>Password</label>
                     <i class="fa-solid fa-lock"></i>
                 </div>
 
                 <div class="field-wrapper slide-element">
-                    <button class="submit-button" type="submit">Login</button>
+                    <button type="button" class="submit-button" onclick="login()">Login</button>
                 </div>
 
                 <div class="switch-link slide-element">
@@ -50,25 +50,25 @@
             <h2 class="slide-element">Register</h2>
             <form action="#">
                 <div class="field-wrapper slide-element">
-                    <input type="text" required>
+                    <input type="text" id="regUsername" required>
                     <label>Username</label>
                     <i class="fa-solid fa-user"></i>
                 </div>
 
                 <div class="field-wrapper slide-element">
-                    <input type="email" required>
+                    <input type="email" id="regEmail" required>
                     <label>Email</label>
                     <i class="fa-solid fa-envelope"></i>
                 </div>
 
                 <div class="field-wrapper slide-element">
-                    <input type="password" required>
+                    <input type="password" id="regPassword" required>
                     <label>Password</label>
                     <i class="fa-solid fa-lock"></i>
                 </div>
 
                 <div class="field-wrapper slide-element">
-                    <button class="submit-button" type="submit">Register</button>
+                    <button type="button" class="submit-button" onclick="register()">Register</button>
                 </div>
 
                 <div class="switch-link slide-element">
@@ -89,5 +89,40 @@
     </div>
 
     <script src="style.js"></script>
+    96:
+<script>
+// REGISTER FUNCTION
+function register() {
+  let username = document.getElementById("regUsername").value;
+  let email = document.getElementById("regEmail").value;
+  let password = document.getElementById("regPassword").value;
+
+  localStorage.setItem("regUsername", username);
+  localStorage.setItem("regEmail", email);
+  localStorage.setItem("regPassword", password);
+
+  alert("Registered Successfully ✅");
+}
+
+// LOGIN FUNCTION
+function login() {
+  let username = document.getElementById("loginUsername").value;
+  let password = document.getElementById("loginPassword").value;
+
+  let storedUser = localStorage.getItem("regUsername");
+  let storedPass = localStorage.getItem("regPassword");
+
+  if (username === storedUser && password === storedPass) {
+
+    localStorage.setItem("username", storedUser);
+    localStorage.setItem("email", localStorage.getItem("regEmail"));
+
+    window.location.href = "home.html";
+
+  } else {
+    alert("Invalid Username or Password ❌");
+  }
+}
+</script>
 </body>
 </html>
