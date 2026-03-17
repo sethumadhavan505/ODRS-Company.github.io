@@ -44,7 +44,7 @@ body{
 /* MAIN */
 .container{
     display:flex;
-    gap:0;
+    height:calc(100vh - 80px);
 }
 
 .left-panel{
