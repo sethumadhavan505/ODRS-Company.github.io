@@ -18,9 +18,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     <div class="profile-menu">
         <i class="fa-solid fa-user"></i>
         <div class="dropdown">
-            <p>Name: User</p>
-            <p>Email: user@email.com</p>
-            <a href="index.html">Sign Out</a>
+            <p>Name: <span id="userName"></span></p>
+            <p>Email: <span id="userEmail"></span></p>
+            <a href="index.html" onclick="logout()">Sign Out</a>
         </div>
     </div>
 </header>
@@ -142,6 +142,23 @@ items.forEach(item => {
   });
 });
 </script>    
+
+<script>
+// Block direct access
+if (!localStorage.getItem("username")) {
+  window.location.href = "index.html";
+}
+
+// Show user data
+document.getElementById("userName").textContent = localStorage.getItem("username");
+document.getElementById("userEmail").textContent = localStorage.getItem("email");
+
+// Logout
+function logout() {
+  localStorage.removeItem("username");
+  localStorage.removeItem("email");
+}
+</script>
     
 </body>
 </html>
