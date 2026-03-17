@@ -98,11 +98,11 @@ body{
   overflow: hidden;
   background: #f9f9f9;
   padding: 0 16px;
-  transition: max-height 0.4s ease;
+  transition: max-height 0.4s ease, padding 0.3s ease;
 }
 
 .accordion-item.active .panel {
-  max-height: 200px;
+  max-height: 300px;
   padding: 12px 16px;
 }
 
