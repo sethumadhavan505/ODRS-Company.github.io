@@ -68,3 +68,48 @@ body{
     text-decoration:none;
     border-radius:6px;
 }
+
+/* ===== PASTE BELOW THIS LINE ===== */
+
+.accordion-item {
+  background: #ffffff;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.accordion-btn {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, #219ebc, #0077b6);
+  color: white;
+  border: none;
+  font-size: 16px;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  background: #f9f9f9;
+  padding: 0 16px;
+  transition: max-height 0.4s ease;
+}
+
+.accordion-item.active .panel {
+  max-height: 200px;
+  padding: 12px 16px;
+}
+
+.icon {
+  transition: transform 0.3s;
+}
+
+.accordion-item.active .icon {
+  transform: rotate(180deg);
+}
