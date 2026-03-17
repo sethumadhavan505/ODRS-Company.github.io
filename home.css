@@ -141,3 +141,7 @@ body{
 .left-panel ul li a:hover {
     color: #38bdf8;
 }
+
+.dropdown p {
+    margin: 10px 0;
+}
