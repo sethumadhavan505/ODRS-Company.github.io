@@ -114,5 +114,13 @@ body{
   transform: rotate(180deg);
 }
 .left-panel ul li a {
-    font-size: 20px;
+    font-size: 50px;
+}
+.left-panel ul li {
+    margin: 15px 0;
+}
+
+.left-panel ul li a i {
+    margin-right: 10px;
+    font-size: 22px;
 }
