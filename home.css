@@ -113,3 +113,6 @@ body{
 .accordion-item.active .icon {
   transform: rotate(180deg);
 }
+.left-panel ul li a {
+    font-size: 20px;
+}
