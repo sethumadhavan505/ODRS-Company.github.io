@@ -145,3 +145,12 @@ body{
 .dropdown p {
     margin: 10px 0;
 }
+
+/* INCREASE HEADING SIZE */
+
+.left-panel h2,
+.right-panel h2 {
+    font-size: 30px;   /* increase size */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
