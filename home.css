@@ -21,8 +21,7 @@ body{
 }
 
 .company-logo img{
-    height:60px;
-    width:auto;
+    height:70px;
 }
 
 .profile-menu{
@@ -150,10 +149,13 @@ body{
 
 /* INCREASE HEADING SIZE */
 
-.left-panel h2,
-.right-panel h2 {
+.left-panel h2{
     font-size: 30px;
     border-bottom: 3px solid #38bdf8;
     display: inline-block;
     padding-bottom: 5px;
 }
+.right-panel h2 {
+    font-size: 30px;
+}
+
